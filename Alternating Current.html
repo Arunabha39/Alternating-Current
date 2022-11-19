@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/ARUNABHA/project.html/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternating Current</title>
+    <link rel="stylesheet" href="file:///C:/Users/ARUNABHA/project.html/style.css">
+<link rel="stylesheet" href="./Alternating Current_files/css"><link rel="stylesheet" href="./Alternating Current_files/css(1)"><link rel="stylesheet" href="./Alternating Current_files/css(2)"><style>
+    body {background-color: #D3D3D3 ;}
+    h1   {color:rgb(213, 229, 31);
+        font-family: "Audiowide", sans-serif;
+        font-size: 30px;
+  text-shadow: 3px 3px 3px rgb(32, 9, 59);
+   
+
+    }
+    
+
+li{
+    font-size: 150%;
+    text-align-last: center;
+    font-family: "Audiowide", sans-serif;
+    font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  color: blanchedalmond;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: rgb(60, 23, 23);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+p{
+    color: blanchedalmond;
+}
+body {
+	display: grid;
+	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+
+	background: black;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+.fire {
+	position: relative;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	align-self: end;
+	justify-self: center;
+	width: 300px;
+	height: 300px;
+	background: #880e4f;
+	border-radius: 50%;
+	box-shadow: 0 0 50px 50px #880e4f;
+	animation: background 5s ease infinite;
+}
+.flame {
+	position: absolute;
+	bottom: 70px;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border-radius: 0 70%;
+	box-shadow: -10px -10px 0 10px orange, -20px -20px 0 20px yellow;
+	animation: flicker 5s ease infinite;
+}
+.f1 {
+	left: 50px;
+}
+.f3 {
+	transform: rotateZ(45deg);
+	left: 100px;
+	bottom: 100px;
+}
+.f2 {
+	transform: rotateZ(90deg);
+	left: 150px;
+}
+.log {
+	position: absolute;
+	bottom: 15px;
+	left: 50px;
+	width: 200px;
+	height: 50px;
+	background-color: brown;
+	border-radius: 10px;
+}
+.l1 {
+	transform: rotateZ(20deg);
+	box-shadow: 0 0 10px #3e2723;
+}
+.l2 {
+	transform: rotateZ(-20deg);
+	box-shadow: 0 0 10px #3e2723;
+}
+.l3 {
+	transform: rotate3d(1, 1, 1, 40deg);
+}
+.l4 {
+	transform: rotate3d(1, 1, 1, -40deg);
+}
+.spark {
+	width: 5px;
+	height: 5px;
+	background-color: orangered;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 3px orange;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	opacity: 0;
+}
+.s1 {
+	animation: fadein 5s ease infinite, floatup 5s ease infinite,
+		left 5s ease infinite;
+}
+.s2 {
+	animation: fadein 5s 0.5s ease infinite, floatup 5s 0.5s ease infinite,
+		right 5s 0.5s ease infinite;
+}
+.s3 {
+	animation: fadein 5s 1s ease infinite, floatup 5s 1s ease infinite,
+		farleft 5s 1s ease infinite;
+}
+.s4 {
+	animation: fadein 5s 1.5s ease infinite, floatup 5s 1.5s ease infinite,
+		farright 5s 1.5s ease infinite;
+}
+.s5 {
+	animation: fadein 5s 2s linear infinite, floatup 5s 2s linear infinite;
+}
+.s6 {
+	animation: fadein 5s 2.5s ease infinite, floatup 5s 2.5s ease infinite,
+		left 5s 2.5s ease infinite;
+}
+.s7 {
+	animation: fadein 5s 3s ease infinite, floatup 5s 3s ease infinite,
+		right 5s 3s ease infinite;
+}
+.s8 {
+	animation: fadein 5s 3.5s ease infinite, floatup 5s 3.5s ease infinite,
+		farleft 5s 3.5s ease infinite;
+}
+
+@keyframes flicker {
+	0%,
+	100% {
+		background-color: red;
+		box-shadow: -10px -10px 0 10px orange, -15px -15px 0 15px yellow;
+	}
+	25%,
+	75% {
+		background-color: red;
+		box-shadow: -10px -10px 0 10px orangered, -20px -20px 0 20px yellow;
+	}
+	50% {
+		background-color: red;
+		box-shadow: -10px -10px 0 10px orange, -15px -15px 0 15px yellow;
+	}
+}
+
+@keyframes fadein {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 100%;
+	}
+}
+
+@keyframes floatup {
+	0% {
+		top: 150px;
+	}
+	100% {
+		top: -50%;
+	}
+}
+@keyframes left {
+	0% {
+		left: 150px;
+	}
+	100% {
+		left: 100px;
+	}
+}
+@keyframes right {
+	0% {
+		left: 150px;
+	}
+	100% {
+		left: 200px;
+	}
+}
+@keyframes farleft {
+	0% {
+		left: 150px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+@keyframes farright {
+	0% {
+		left: 150px;
+	}
+	100% {
+		left: 300px;
+	}
+}
+@keyframes background {
+	0%,
+	50%,
+	100% {
+		box-shadow: 0 0 50px 50px #880e4f;
+	}
+	25%,
+	75% {
+		box-shadow: 0 0 60px 60px #880e4f;
+	}
+}
+
+</style></head>
+
+
+
+
+<body>
+    <div class="fire">
+        <div class="logs">
+            <div class="log l1"></div>
+            <div class="log l2"></div>
+        </div>
+        <div class="flames">
+            <div class="flame f1"></div>
+            <div class="flame f2"></div>
+            <div class="flame f3"></div>
+        </div>
+        <div class="sparks">
+            <div class="spark s1"></div>
+            <div class="spark s2"></div>
+            <div class="spark s3"></div>
+            <div class="spark s4"></div>
+            <div class="spark s5"></div>
+            <div class="spark s6"></div>
+            <div class="spark s7"></div>
+            <div class="spark s8"></div>
+        </div>
+    </div>
+    <h1 style="text-align:center;">Chapter-31</h1>
+    <pre>    </pre>
+    <h1 style="text-align:center ;">Alternating Current <br>Circuits</h1>
+    <pre>
+
+    </pre>
+    <h1 style="text-align:center ;" class="font-effect-fire">Alternating Current Circuits</h1>
+
+    <li style="text-align:center ;">Wave Nomencleture &amp; RMS</li>
+    <li style="text-align:center ;">AC Circuits:Resistor;Inductor;Capacitor</li>
+    <li style="text-align:center ;">Transformers-not the movie</li>
+<li style="text-align:center ;">LC and RLC Circuits-No generator</li>
+<li style="text-align:center ;">Driven RLC Circuits-Series</li>
+<li style="text-align:center ;">Impedence and power</li>
+<li style="text-align:center ;">RL and RL Circuits-Low &amp; High Frequency</li>
+<li style="text-align:center ;">RLC Circuit-Solution via Complex Numbers</li>
+<li style="text-align:center ;">Resonance</li>
+<pre>
+
+
+</pre>
+<p>Click the button at the right corner:</p>
+
+<button>
+    <a href="https://ncert.nic.in/ncerts/l/leph107.pdf">Alternating Current</a></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</body></html>
